@@ -1,0 +1,618 @@
+/* -------------------- */
+
+
+/* General */
+
+
+/* -------------------- */
+
+html {
+    scroll-behavior: smooth;
+    max-width: 10;
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+* a {
+    text-decoration: none;
+}
+
+
+/* .mobile {
+    overflow: hidden;
+} */
+
+#head-image p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Alata', sans-serif;
+}
+
+h5 {
+    padding: 15px 0 10px 0;
+}
+
+section {
+    padding: 45px 0;
+}
+
+* li {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    padding: 10px 0;
+}
+
+#chef {
+    vertical-align: middle;
+}
+
+#nombre {
+    cursor: pointer;
+}
+
+
+/* -------------------- */
+
+
+/* Lists */
+
+
+/* -------------------- */
+
+.fa-angle-right {
+    padding: 0 10px;
+}
+
+
+/* -------------------- */
+
+
+/* Header */
+
+
+/* -------------------- */
+
+#burger {
+    float: right;
+    color: white;
+    z-index: 2;
+    position: reltive;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+
+#header {
+    position: fixed;
+    width: 300px;
+    background-color: #040b14;
+    bottom: 0;
+    top: 0;
+    padding: 0 15px;
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: all ease-in-out 0.5s;
+}
+
+.text-light {
+    text-align: center;
+    color: #fff !important;
+}
+
+#header .profile h1 a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#header .profile img {
+    width: 120px;
+    display: block;
+    margin: 5px auto 0;
+    border: 8px solid #2c2f3f;
+    border-radius: 50%;
+}
+
+#header .profile .social-links a {
+    display: inline-block;
+    color: white;
+    background: #212431;
+    font-size: 15px;
+    border-radius: 50%;
+    justify-items: center;
+    align-content: center;
+    height: 25px;
+    width: 25px;
+    margin-right: 11px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+#header .profile .social-links a:hover {
+    background: #149ddd;
+    color: white;
+}
+
+
+/* -------------------- */
+
+
+/* Navigation Menu */
+
+
+/* -------------------- */
+
+.nav-menu * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-menu {
+    padding-top: 30px;
+    display: block;
+}
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    font-size: 18px;
+    padding: 23px;
+    margin: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.nav-menu a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu a i {
+    color: #a8a9b4;
+    padding-right: 28px;
+    height: 20px;
+    width: 20px;
+    padding-bottom: 8px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.nav-menu .active>a i,
+.nav-menu a:hover i,
+.nav-menu li:hover>a i {
+    color: #149ddd;
+}
+
+
+/* -------------------- */
+
+
+/* Image with text */
+
+
+/* -------------------- */
+
+#head-image {
+    background: url("assets/lap.jpeg") top center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+.text-image {
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 12rem;
+    animation-name: animas;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    margin-bottom: 150px;
+}
+
+
+/* @media screen and (max-width: 600px) {
+    header {
+        visibility: hidden;
+    }
+} */
+
+@keyframes animas {
+    0% {
+        color: black;
+    }
+    25% {
+        color: white;
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        color: white
+    }
+    100% {
+        color: black;
+    }
+}
+
+#head-image h1 {
+    font-size: 4rem;
+}
+
+#head-image p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* 
+@media (min-width: 1024px) {
+    #head-image {
+    background-attachment: fixed;
+    }
+  } */
+
+
+/* -------------------- */
+
+
+/* About */
+
+
+/* Main */
+
+
+/* -------------------- */
+
+#main {
+    position: relative;
+    transition: all .5s;
+    padding-left: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #main {
+        padding-left: 0px;
+    }
+}
+
+#main h2,
+h3,
+h4 {
+    color: #173b6c;
+}
+
+#main .about {
+    padding: 50px auto;
+}
+
+#abt-img {
+    height: auto;
+    width: auto;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
+.about li {
+    list-style: none;
+}
+
+.about li i {
+    color: #173b6c;
+}
+
+
+/* -------------------- */
+
+
+/* Resume icon sty */
+
+
+/* -------------------- */
+
+.ico-8 {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.rest-name {
+    padding-top: 25px;
+}
+
+.resume-item {
+    border: #173b6c solid 3px;
+    height: 20px;
+    width: 0px;
+}
+
+.resume {
+    background: #F8F9F9;
+}
+
+
+/* #FAF8FF */
+
+.experience .li {
+    padding: 10px 0;
+}
+
+.resume .resume-section {
+    padding: 0 0 0 10px;
+    margin: 18px 5px;
+    font-weight: 700;
+    justify-items: auto;
+}
+
+.list-sty ul li {
+    /* padding: 8px 0; */
+    list-style: none;
+}
+
+
+/* 
+#pers li i{
+    padding: 15px;
+} */
+
+.ico-perso {
+    color: #173b6c;
+}
+
+.exp-date {
+    background-color: #D6E3F8;
+    opacity: 60%;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    width: 140px;
+    margin-left: 20px;
+    margin: 20px;
+    font-family: 'Alata', sans-serif;
+}
+
+.exp-sec h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.plasty {
+    font-size: .8rem;
+    margin: 10px;
+}
+
+.soft-ski ul li i .fas {
+    color: gold;
+}
+
+
+/* -------------------- */
+
+
+/* Photo */
+
+
+/* -------------------- */
+
+.port-cont {
+    position: relative;
+}
+
+#photo img {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    /* object-fit: cover; */
+    margin: 15px 0px;
+    line-height: 0;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+#photo img:hover {
+    border-radius: 5%;
+    opacity: 0.6;
+    transition: all .4s ease;
+}
+
+
+/* 
+.ovr-img {
+    height: 500px;
+    align-content: center;
+    vertical-align: middle;
+} */
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content (Image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+/* Add Animation - Zoom in the Modal */
+
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.photo {
+    background: #F8F9F9;
+}
+
+.card {
+    border-radius: 30%;
+}
+
+.refer {
+    font-size: .9rem;
+    color: gray;
+}
+
+
+/* -------------------- */
+
+
+/* Photo */
+
+
+/* -------------------- */
+
+.footer {
+    text-align: center;
+    color: gray;
+    align-items: center;
+}
+
+
+/* #contact {
+    background-color: #F8F9F9;
+    ;
+} */
+
+
+/* -------------------- */
+
+
+/* Video */
+
+
+/* -------------------- */
+
+#web-vid {
+    height: 1000px;
+    width: 100%;
+}
